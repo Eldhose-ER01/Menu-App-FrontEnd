@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from '../Navbar/Nav';
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { TbBrandFacebook } from "react-icons/tb";
@@ -12,6 +13,7 @@ export default function Contacts() {
   return (
     <>
       <div className='contact-wrapper'>
+        <Nav />
         <div className='content-box'>
           <div className='box-item'>
             <div className='box1-properties'>

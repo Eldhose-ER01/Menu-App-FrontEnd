@@ -16,10 +16,10 @@ export default function Nav() {
         </div>
         <div className={`nav-items ${isOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">MENU</a></li>
-            <li><a href="">ADD MENU ITEM's</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/">MENU</a></li>
+            <li><a href="/addmenuitem">ADD MENU ITEM's</a></li>
+            <li><a href="/contact">CONTACT</a></li>
           </ul>
         </div>
         <div className='hamburger' onClick={toggleNav}>

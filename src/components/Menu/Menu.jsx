@@ -14,7 +14,7 @@ const finddatas=async()=>{
     const response=await axios.get('http://localhost:3000/alldatas')
       if(response.data.success){
         setValues(response.data.data)
-        setFilteredValues(response.data.data); 
+        setFilteredValues(response.data.data); //
       }
   } catch (error) {
     console.log(error);
@@ -40,6 +40,8 @@ finddatas()
 }, [])
 
   return (
+    
+  
     <div>
         <div className="navbars">
         <Nav />
@@ -47,11 +49,18 @@ finddatas()
         <div className="menu-img">
   <img src="../../../src/assets/images/Homeimg.jpg" alt=""  />
   <div className="menu-contents">
-<h1>MENU</h1>
-<p>Please take a look at our menu featuring food, drinks, and brunch. If you'd like to place an order, use the "Order Online" button located below the menu.</p>
+    <div className="menuhead">
+    <h1>MENU</h1>
+    </div>
+    <div>
+    <p>Please take a look at our menu featuring food, drinks, and brunch. If you'd like to place an order, use the "Order Online" button located below the menu.</p>
+
+    </div>
+
   </div>
-  <div className="btn-img">
-<img src="../../../src/assets/images/buttonimg.png" alt=""  />
+  
+
+</div>
 <div className="main-btn">
 
 {
@@ -66,8 +75,10 @@ finddatas()
 
 </div>
 
-
     <div className="menu-itmes">
+        <div className="menu-box">
+
+        
         <div className="item-img1"> 
 
         
@@ -80,15 +91,18 @@ finddatas()
         </div>
       <div className="menu-title">
         {
-          <h1 >These are our unique items</h1>
+          <h1 >Let's Enjoy</h1>
         }
         
+        </div>
+        <div>
+            
         </div>
         <div className="menu-products">
   {currentItems.map((value, index) => (
     <div key={index} className="products">
       <h1>
-        <span>{value.menuTitle}</span>
+        <span>{value.menuTitle}:</span>
        
         <span>${value.price}</span>
       </h1>
@@ -108,16 +122,29 @@ finddatas()
             </button>
           ))}
         </div>
+        
+      </div>
+      
+      
+      </div>
+     
+     <div className="footer-contact">
+
+    <Contacts/>
+    <Footer/>
+      
+
       </div>
 
 
-<Contacts/> 
-<Footer/>
-  </div>
-  
- 
-        </div>
+      
+
+      
+      
      
     </div>
+   
+    
+    
   )
 }

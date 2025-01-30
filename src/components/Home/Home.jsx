@@ -10,7 +10,7 @@ export default function Home() {
       <div className="home-wrapper">
         <div className="header-img">
           <img src="../../../src/assets/images/Homeimg.jpg" alt="Home Image" />
-          <div className="overlay">
+          <div className="overla">
             <div className="content">
             <h1>This is our page</h1>
             <p>Enjoy a variety of beverages, from freshly brewed coffee and teas to refreshing fruit juices and smoothies. Whether you need a morning boost or a cool drink to relax, we’ve got you covered.</p>
@@ -20,7 +20,7 @@ export default function Home() {
             <div className="contacts-items">
 
             
-            <Contacts/> 
+            {/* <Contacts/>  */}
             </div>
         </div>
         <div>

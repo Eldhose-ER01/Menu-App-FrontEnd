@@ -15,15 +15,15 @@ const Menudatas = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]:name === "menuName" ? value.toUpperCase() : value,
     }));
   };
 
+
+  //Adding the menu datas
   const handleSubmit = async(e) => {
     e.preventDefault();
-    try {
-      console.log(formData,"ffffffffffffff");
-      
+    try {      
       const response = await axios.post('http://localhost:3000/menudatas', formData);
          if(response.data.success){
           console.log("hiiii");
