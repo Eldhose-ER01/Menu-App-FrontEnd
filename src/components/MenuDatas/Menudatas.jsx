@@ -24,11 +24,7 @@ const Menudatas = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {      
-      const response = await axios.post(`https://menu-app-backend-2.onrender.com/menudatas`, formData, {
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      });
+      const response = await axios.post('https://menu-app-backend.vercel.app/menudatas', formData);
          if(response.data.success){
           console.log("hiiii");
           toast.success("Data submited")
