@@ -24,7 +24,11 @@ const Menudatas = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {      
-      const response = await axios.post('https://menu-app-backend.vercel.app/menudatas', formData);
+      const response = await axios.post('https://menu-app-backend.vercel.app/menudatas', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
          if(response.data.success){
           console.log("hiiii");
           toast.success("Data submited")
