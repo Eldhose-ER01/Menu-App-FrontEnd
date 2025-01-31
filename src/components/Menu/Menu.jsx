@@ -11,7 +11,7 @@ const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
 const finddatas=async()=>{
   try {
-    const response=await axios.get('https://menu-app-backend-lty4.onrender.com/alldatas')
+    const response=await axios.get('http://localhost:3000/alldatas')
       if(response.data.success){
         setValues(response.data.data)
         setFilteredValues(response.data.data); //
@@ -47,7 +47,7 @@ finddatas()
         <Nav />
         </div>
         <div className="menu-img">
-  <img src="../../../public/static/Images/Homeimg.jpg" alt=""  />
+  <img src="/static/Images/Homeimg.jpg" alt=""  />
   <div className="menu-contents">
     <div className="menuhead">
     <h1>MENU</h1>
@@ -82,12 +82,12 @@ finddatas()
         <div className="item-img1"> 
 
         
-        <img src="../../../public/static/Images/drinks.png" alt="" />
+        <img src="/static/Images/drinks.png" alt="" />
         </div>
         <div className="item-img2"> 
 
         
-        <img src="../../../public/static/Images/cockatile.png" alt="" />
+        <img src="/static/Images/cockatile.png" alt="" />
         </div>
       <div className="menu-title">
         {
