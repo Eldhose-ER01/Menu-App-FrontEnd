@@ -9,7 +9,7 @@ export default function Home() {
       <Nav />
       <div className="home-wrapper">
         <div className="header-img">
-          <img src="/public/static/Images/Homeimg.jpg" alt="Home Image" />
+          <img src="/static/Images/Homeimg.jpg" alt="Home Image" />
           <div className="overla">
             <div className="content">
             <h1>This is our page</h1>
