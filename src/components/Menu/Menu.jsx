@@ -47,7 +47,7 @@ finddatas()
         <Nav />
         </div>
         <div className="menu-img">
-  <img src="../../../src/assets/images/Homeimg.jpg" alt=""  />
+  <img src="../../../public/static/Images/Homeimg.jpg" alt=""  />
   <div className="menu-contents">
     <div className="menuhead">
     <h1>MENU</h1>
@@ -82,12 +82,12 @@ finddatas()
         <div className="item-img1"> 
 
         
-        <img src="../../../src/assets/images/drinks.png" alt="" />
+        <img src="../../../public/static/Images/drinks.png" alt="" />
         </div>
         <div className="item-img2"> 
 
         
-        <img src="../../../src/assets/images/cockatile.png" alt="" />
+        <img src="../../../public/static/Images/cockatile.png" alt="" />
         </div>
       <div className="menu-title">
         {

@@ -12,7 +12,7 @@ export default function Nav() {
     <div className='wrapper'>
       <div className='navbar'>
         <div className='logo'>
-          <img src="../../../src/assets/images/6860545013e0a63ba8cb7e94004971f7.png" alt="" />
+          <img src="../../../public/static/Images/6860545013e0a63ba8cb7e94004971f7.png" alt="" />
         </div>
         <div className={`nav-items ${isOpen ? 'open' : ''}`}>
           <ul>
