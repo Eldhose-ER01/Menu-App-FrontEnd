@@ -11,7 +11,7 @@ const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
 const finddatas=async()=>{
   try {
-    const response=await axios.get('https://menu-app-backend.vercel.app/alldatas')
+    const response=await axios.get('https://menu-app-backend-2.onrender.com/alldatas')
       if(response.data.success){
         setValues(response.data.data)
         setFilteredValues(response.data.data); //
